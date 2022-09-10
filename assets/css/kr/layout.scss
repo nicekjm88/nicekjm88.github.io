@@ -3,7 +3,6 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import "../mixin";
 @import "../grid.min.css";
 
 // *:lang(en) {
@@ -398,6 +397,9 @@ Create date :
   flex-direction: row-reverse;
   color: #000;
   text-align: center;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
 
   .rule-list {
     display: flex;

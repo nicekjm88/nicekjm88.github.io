@@ -741,7 +741,8 @@ button.close {
 
 .modal.inner-scroll .modal-body .scroll-area {
   height: 60vh;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .modal.fade .modal-dialog {
@@ -886,6 +887,7 @@ button.close {
   line-height: 60px;
   padding: 0 155px 0 10px;
   width: 100%;
+  text-align: left;
 }
 [type="file"]::-webkit-file-upload-button {
   color: #fff;
@@ -899,6 +901,7 @@ button.close {
   height: 60px;
   border: none;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .group-file {

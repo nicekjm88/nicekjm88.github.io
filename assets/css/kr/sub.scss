@@ -3,8 +3,6 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import "../mixin";
-
 #footer {
   padding-top: 160px;
   clear: both;
@@ -47,7 +45,7 @@ Create date :
 
 .wrap-container {
   padding-top: 116px;
-  min-height: 100vh;
+  // min-height: 100vh;
   width: 1330px;
   margin: 0 auto;
 
@@ -1095,6 +1093,7 @@ Create date :
   right: 60px;
   bottom: 130px;
   z-index: 1;
+  display: none;
 
   ul {
     margin: 0;
@@ -1365,6 +1364,9 @@ Create date :
 
 /* tablet */
 @media (max-width: 1180px) {
+  .card {
+    padding: 40px 20px;
+  }
   #wrap.intro .area-login .edge-round img {
     max-width: 90%;
   }

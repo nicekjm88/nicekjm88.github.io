@@ -3,8 +3,6 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import "../mixin";
-
 #wrap {
   #header {
     top: -116px;
@@ -53,7 +51,7 @@ Create date :
         text-transform: uppercase;
         background-color: #ffffff;
         mix-blend-mode: screen;
-        margin-top: 50px;
+        padding-top: 50px;
 
         strong,
         em,
@@ -124,6 +122,8 @@ Create date :
   }
 
   .section2 {
+    z-index: 1;
+    position: relative;
     height: 1080px;
     background-color: #f5f5f5;
     padding-top: 230px;
@@ -295,6 +295,9 @@ Create date :
   }
 
   .section3 {
+    z-index: 1;
+    position: relative;
+    background-color: #fff;
     padding-top: 180px;
 
     .slogan {
@@ -421,8 +424,7 @@ Create date :
 }
 @media (max-width: 767px) {
   #contents .section1 {
-    height: 100vh;
-    // max-height: 700px;
+    height: 75vh;
   }
   #contents .section1 .banner {
     height: 100%;
@@ -431,19 +433,19 @@ Create date :
     height: 100%;
     margin-top: 0;
   }
-  #contents .section1 .banner .overlay-text strong em {
-    font-size: 4rem;
-  }
   #contents .section1 .banner .overlay-text strong {
-    font-size: 8rem;
+    font-size: 10rem;
     letter-spacing: -0.5rem;
+  }
+  #contents .section1 .banner .overlay-text strong em {
+    font-size: 6rem;
   }
   #contents .section1 .banner .overlay-text p {
     font-size: 2rem;
-    margin-top: 35px;
+    margin-top: 0;
   }
   #contents .section1 .banner .overlay-text p strong {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.2;
   }
   #contents .section2 {

@@ -34,7 +34,7 @@ $(function () {
       .addTo(controller);
   });
 
-  //텍스트 애니메이션
+  //MICE VENU
   var tween2 = TweenMax.to(".picture-img .img", 1, {
     css: {
       borderRadius: "250px",

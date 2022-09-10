@@ -29,11 +29,11 @@ $(function () {
 
 //tabs
 (function (doc, $) {
-  var tabContainer = doc.querySelector('.tab-container');
+  var tabContainer = doc.querySelector(".tab-container");
   if (!tabContainer) return;
 
-  $(tabContainer).on('click', '.tab-button', handleClickEvent);
-  $(tabContainer).on('keydown', '.tab-list', handleKeyEvent);
+  $(tabContainer).on("click", ".tab-button", handleClickEvent);
+  $(tabContainer).on("keydown", ".tab-list", handleKeyEvent);
 
   function handleClickEvent(event) {
     event = event || window.event;
@@ -48,38 +48,38 @@ $(function () {
     if (!tab) return;
 
     $(tab)
-      .addClass('tab-button--active')
+      .addClass("tab-button--active")
       .attr({
-        'tabindex': '0',
-        'aria-selected': 'true'
+        tabindex: "0",
+        "aria-selected": "true",
       })
       .focus()
       .siblings()
-      .removeClass('tab-button--active')
+      .removeClass("tab-button--active")
       .attr({
-        'tabindex': '-1',
-        'aria-selected': 'false'
-      })
+        tabindex: "-1",
+        "aria-selected": "false",
+      });
   }
 
   function activeTabPanel(tab) {
     if (!tab) return;
-    $('#' + tab.getAttribute('aria-controls'))
+    $("#" + tab.getAttribute("aria-controls"))
       .attr({
-        'tabindex': '0'
+        tabindex: "0",
       })
       .prop({
-        'hidden': false
+        hidden: false,
       })
-      .addClass('tab-panel--active')
-      .siblings('.tab-panel')
+      .addClass("tab-panel--active")
+      .siblings(".tab-panel")
       .attr({
-        'tabindex': '-1'
+        tabindex: "-1",
       })
       .prop({
-        'hidden': true
+        hidden: true,
       })
-      .removeClass('tab-panel--active')
+      .removeClass("tab-panel--active");
   }
 
   function handleKeyEvent(event) {
@@ -92,23 +92,23 @@ $(function () {
         if (event.target.previousElementSibling) {
           $(event.target)
             .attr({
-              'tabindex': '-1'
+              tabindex: "-1",
             })
             .prev()
             .attr({
-              'tabindex': '0'
+              tabindex: "0",
             })
-            .focus()
+            .focus();
         } else {
           $(event.target)
             .attr({
-              'tabindex': '-1'
+              tabindex: "-1",
             })
-            .siblings(':last')
+            .siblings(":last")
             .attr({
-              'tabindex': '0'
+              tabindex: "0",
             })
-            .focus()
+            .focus();
         }
         break;
 
@@ -116,23 +116,23 @@ $(function () {
         if (event.target.nextElementSibling) {
           $(event.target)
             .attr({
-              'tabindex': '-1'
+              tabindex: "-1",
             })
             .next()
             .attr({
-              'tabindex': '0'
+              tabindex: "0",
             })
-            .focus()
+            .focus();
         } else {
           $(event.target)
             .attr({
-              'tabindex': '-1'
+              tabindex: "-1",
             })
-            .siblings(':first')
+            .siblings(":first")
             .attr({
-              'tabindex': '0'
+              tabindex: "0",
             })
-            .focus()
+            .focus();
         }
         break;
       case 32: //스페이스 키
@@ -144,8 +144,7 @@ $(function () {
     }
   }
 
-
-  $('.tab-button:first-of-type', tabContainer).trigger('click');
+  $(".tab-button:first-of-type", tabContainer).trigger("click");
 })(document, jQuery);
 
 $(window).resize(function () {
@@ -164,4 +163,12 @@ $(window).resize(function () {
 
 $(window).on("load", function () {
   $(window).trigger("resize");
+});
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 150) {
+    $(".quick").fadeIn();
+  } else {
+    $(".quick").fadeOut();
+  }
 });
