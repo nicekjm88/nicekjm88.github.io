@@ -1,0 +1,508 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : 
+Create date : 
+-------------------------------------------------*/
+@import "../mixin";
+
+#wrap {
+  #header {
+    top: -116px;
+  }
+
+  &.intro {
+    #header {
+      top: 0;
+    }
+  }
+}
+
+#contents {
+  .section1 {
+    height: 100vh;
+
+    .banner {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        mix-blend-mode: screen;
+        margin-top: 50px;
+
+        strong,
+        em,
+        span {
+          display: block;
+        }
+
+        strong {
+          line-height: 1;
+          opacity: 0;
+
+          position: relative;
+          top: 30px;
+
+          em {
+            font-size: 18rem;
+            letter-spacing: 0;
+          }
+
+          font-size: 32rem;
+          font-family: "S-CoreDream";
+          font-weight: 900;
+          letter-spacing: -2rem;
+        }
+
+        p {
+          opacity: 0;
+
+          position: relative;
+          top: 30px;
+          margin-top: 70px;
+          font-size: 3.5rem;
+          font-family: "IncheonMICE";
+          font-weight: 500;
+
+          strong {
+            letter-spacing: 0;
+            font-size: 4.7rem;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-family: "IncheonMICE";
+            display: block;
+          }
+
+          br {
+            display: none;
+
+            @media (max-width: 767px) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &.fade-in {
+      .banner {
+        strong {
+          opacity: 1;
+          top: 0;
+        }
+        p {
+          opacity: 1;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .section2 {
+    height: 1080px;
+    background-color: #f5f5f5;
+    padding-top: 230px;
+
+    .slogan {
+      font-size: 8rem;
+      font-family: "IncheonMICE";
+      color: #707070;
+      font-weight: 400;
+      letter-spacing: -2px;
+
+      > span {
+        position: relative;
+        left: -30px;
+        opacity: 0;
+        display: block;
+      }
+
+      strong {
+        font-weight: 700;
+        color: #000;
+        position: relative;
+
+        span {
+          position: relative;
+          z-index: 2;
+        }
+
+        &::before {
+          content: "";
+          background: url("../../images/bg_circle.gif") 0 0 no-repeat;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 0;
+          right: -40px;
+        }
+
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 24px;
+          background-color: #5cc2cf;
+          z-index: 1;
+        }
+      }
+    }
+
+    .picture {
+      position: relative;
+      margin-bottom: 80px;
+
+      &-title {
+        text-transform: uppercase;
+        font-size: 14rem;
+        color: #ececec;
+        font-weight: 900;
+        font-family: "S-CoreDream";
+        line-height: 1;
+        display: block;
+      }
+
+      &-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+        margin-top: 100px;
+
+        .img {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          overflow: hidden;
+          border-radius: 130px;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 40px;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .desc {
+      opacity: 0;
+      color: #000;
+      font-size: 3rem;
+      font-family: "IncheonMICE";
+      font-weight: 400;
+
+      &-title {
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
+        font-weight: 700;
+        font-size: 4.5rem;
+        margin-bottom: 30px;
+        display: block;
+      }
+
+      p {
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
+        line-height: 1.6;
+      }
+
+      &-btn {
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
+        margin-top: 40px;
+        width: 275px;
+        height: 85px;
+        border: 1px solid #707070;
+        padding: 0 30px;
+        text-align: left;
+        background: url("../../images/bg_btn_arr.gif") 90% center no-repeat
+          #f5f5f5;
+      }
+
+      @media (max-width: 767px) {
+        background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
+      }
+    }
+
+    &.fade-in {
+      .slogan {
+        > span {
+          opacity: 1;
+          left: 30px;
+        }
+      }
+
+      .desc {
+        opacity: 1;
+
+        &-title {
+          opacity: 1;
+          bottom: 0;
+        }
+
+        p {
+          opacity: 1;
+          bottom: 0;
+        }
+
+        &-btn {
+          opacity: 1;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    padding-top: 180px;
+
+    .slogan {
+      position: relative;
+      left: -30px;
+      opacity: 0;
+      font-size: 8rem;
+      font-family: "IncheonMICE";
+      color: #707070;
+      font-weight: 400;
+      letter-spacing: -2px;
+
+      strong {
+        font-weight: 700;
+        color: #000;
+      }
+    }
+
+    .btn-download {
+      width: 254px;
+      height: 257px;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 2.8rem;
+        line-height: 1;
+        letter-spacing: -0.05em;
+
+        strong {
+          font-weight: 700;
+        }
+
+        i {
+          color: #065863;
+          margin-bottom: 5px;
+        }
+      }
+
+      .bg {
+        animation: rotating 10s linear infinite;
+      }
+    }
+
+    .contact-us {
+      position: relative;
+      bottom: -30px;
+      opacity: 0;
+      margin-top: 180px;
+      font-family: "IncheonMICE";
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 1.4;
+
+      .label {
+        color: #006064;
+        font-size: 4.5rem;
+        font-family: "IncheonMICE";
+        font-weight: 700;
+      }
+    }
+
+    &.fade-in {
+      .slogan {
+        opacity: 1;
+        left: 30px;
+      }
+
+      .contact-us {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1180px) {
+  #contents .section1 .banner .overlay-text strong,
+  #contents .section1 .banner .overlay-text p {
+    transform: scale(0.75);
+  }
+  #contents .section1 .banner .overlay-text p {
+    margin-top: 0;
+  }
+  #contents .section2 {
+    height: inherit;
+    padding: 110px 0;
+  }
+  #contents .section2 .slogan {
+    font-size: 6rem;
+  }
+  #contents .section2 .picture {
+    transform: scale(0.75);
+  }
+  #contents .section3 .slogan {
+    font-size: 6rem;
+  }
+  #contents .section3 .contact-us {
+    font-size: 2rem;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 767px) {
+  #contents .section1 {
+    height: 100vh;
+    // max-height: 700px;
+  }
+  #contents .section1 .banner {
+    height: 100%;
+  }
+  #contents .section1 .banner .overlay-text {
+    height: 100%;
+    margin-top: 0;
+  }
+  #contents .section1 .banner .overlay-text strong em {
+    font-size: 4rem;
+  }
+  #contents .section1 .banner .overlay-text strong {
+    font-size: 8rem;
+    letter-spacing: -0.5rem;
+  }
+  #contents .section1 .banner .overlay-text p {
+    font-size: 2rem;
+    margin-top: 35px;
+  }
+  #contents .section1 .banner .overlay-text p strong {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+  #contents .section2 {
+    height: inherit;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #contents .section2 .slogan {
+    font-size: 4rem;
+    text-align: center;
+  }
+  #contents .section2.fade-in .slogan > span {
+    left: 0;
+  }
+  #contents .section2 .desc {
+    background-size: 90%;
+    background-position: center 20px;
+  }
+  #contents .section2 .desc-title {
+    font-size: 2.5rem;
+  }
+  #contents .section2 .desc {
+    font-size: 2rem;
+    padding: 280px 20px 0;
+  }
+  #contents .section2 .desc-btn {
+    width: 215px;
+    height: 55px;
+  }
+
+  #contents .section3 {
+    padding-top: 100px;
+  }
+
+  #contents .section3.fade-in .slogan {
+    left: 0;
+  }
+
+  #contents .section3 .slogan {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  #contents .section3 .btn-download {
+    position: absolute;
+    top: 190px;
+    right: 0px;
+    transform: scale(0.75);
+  }
+  #contents .section3 .contact-us {
+    font-size: 2rem;
+  }
+  #contents .section3 .contact-us .label {
+    font-size: 2.2rem;
+  }
+  #contents .section3.fade-in .contact-us {
+    margin-top: 0;
+    padding: 60px 30px 0;
+  }
+  #contents .section3.fade-in .contact-us > div {
+    margin-bottom: 30px;
+  }
+}
