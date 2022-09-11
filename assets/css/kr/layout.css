@@ -71,7 +71,7 @@ Create date :
   width: calc(960px / 5);
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #header .gnb-wrap > nav .gnb > li .depth2 > li {
@@ -166,7 +166,7 @@ Create date :
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header.is-active::before {
@@ -222,7 +222,7 @@ Create date :
 
 #hamburger-11.is-active {
   -webkit-animation: smallbig 0.6s forwards;
-          animation: smallbig 0.6s forwards;
+  animation: smallbig 0.6s forwards;
 }
 
 @-webkit-keyframes smallbig {
@@ -418,8 +418,8 @@ Create date :
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   color: #000;
   text-align: center;
   position: relative;
@@ -442,11 +442,11 @@ Create date :
   #footer .rule-list {
     margin-left: 0;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -460,14 +460,14 @@ Create date :
     padding: 30px 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -478,7 +478,7 @@ Create date :
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1366px) {
   #header h1 {
     left: 20px;
   }
