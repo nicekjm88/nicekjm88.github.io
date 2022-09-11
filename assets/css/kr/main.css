@@ -400,7 +400,7 @@ Create date :
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1181px) {
   #contents .section1 .banner .overlay-text strong,
   #contents .section1 .banner .overlay-text p {
     -webkit-transform: scale(0.75);

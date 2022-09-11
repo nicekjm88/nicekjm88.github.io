@@ -1092,7 +1092,7 @@ Create date :
   position: fixed;
   right: 60px;
   bottom: 130px;
-  z-index: 1;
+  z-index: 20;
   display: none;
 
   ul {
@@ -1363,8 +1363,11 @@ Create date :
 }
 
 /* tablet */
-@media (max-width: 1180px) {
+@media (max-width: 1181px) {
   .card {
+    padding: 40px 20px;
+  }
+  .area-submission .card.type2 {
     padding: 40px 20px;
   }
   #wrap.intro .area-login .edge-round img {

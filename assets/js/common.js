@@ -148,7 +148,7 @@ $(function () {
 })(document, jQuery);
 
 $(window).resize(function () {
-  if ($(window).width() < 767) {
+  if ($(window).width() < 1181) {
     $(".all-menu-list>li").eq(0).addClass("is-active");
     $(".all-menu-list>li>a").click(function () {
       $(this).attr("href", "javascript:void(0)");

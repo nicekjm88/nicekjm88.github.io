@@ -436,9 +436,15 @@ Create date :
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1181px) {
   #header h1 {
     left: 20px;
+  }
+  .all-menu > nav {
+    padding-top: 150px;
+  }
+  .all-menu > nav .all-menu-list > li .depth2 > li .depth3 {
+    display: none;
   }
   #header .gnb-wrap .utils {
     right: 20px;
@@ -452,9 +458,7 @@ Create date :
   .all-menu > nav .all-menu-list > li .depth2 > li {
     margin-bottom: 0;
   }
-  .all-menu > nav .all-menu-list > li .depth2 > li .depth3 {
-    display: none;
-  }
+
   .all-menu > nav .all-menu-list > li {
     margin-bottom: 30px;
   }
