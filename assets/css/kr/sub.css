@@ -109,11 +109,11 @@ Create date :
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 70px;
 }
 
@@ -427,8 +427,8 @@ Create date :
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -470,7 +470,8 @@ Create date :
   background-image: url("../../images/bg_process15.gif");
 }
 
-.join-process.type2 > li:nth-child(5)::before, .join-process.type2 > li:nth-child(5)::after {
+.join-process.type2 > li:nth-child(5)::before,
+.join-process.type2 > li:nth-child(5)::after {
   display: none;
 }
 
@@ -648,7 +649,7 @@ Create date :
 #wrap.intro .area-login .edge-round img {
   border-radius: 0 35% 0 0;
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 /* 비밀번호 재설정 */
@@ -814,7 +815,7 @@ Create date :
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 /* WHY인천 > 성공사례 */
@@ -866,7 +867,7 @@ Create date :
   width: 100px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 100px;
   z-index: 99;
   margin: 0;
@@ -944,8 +945,8 @@ Create date :
   font-size: 10rem;
   color: #000;
   -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   font-weight: 900;
   font-family: "S-CoreDream";
@@ -953,15 +954,15 @@ Create date :
 
 .area-history .history .img-container {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .area-history .history .card-motion {
   position: relative;
   width: 100%;
   -webkit-transform: scale(1.001);
-          transform: scale(1.001);
+  transform: scale(1.001);
   margin-bottom: 50px;
 }
 
@@ -986,9 +987,9 @@ Create date :
   top: 50%;
   overflow: hidden;
   -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   border-radius: 50%;
 }
 
@@ -996,33 +997,58 @@ Create date :
   width: 100%;
   height: 100%;
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   -webkit-transform: translateZ(0) scale(1.3);
-          transform: translateZ(0) scale(1.3);
+  transform: translateZ(0) scale(1.3);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
 }
 
-.area-history .history .card-motion .motion-scroll.onTrans .img-holder .img-wrap,
+.area-history
+  .history
+  .card-motion
+  .motion-scroll.onTrans
+  .img-holder
+  .img-wrap,
 .area-history .history .card-motion .motion.onTrans .img-holder .img-wrap {
   width: 100%;
   height: 100%;
   border-radius: 0;
-  -webkit-transition: width 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), height 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), border-radius 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), opacity 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
-  transition: width 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), height 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), border-radius 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), opacity 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
+  -webkit-transition: width 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    height 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    border-radius 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    opacity 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
+  transition: width 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    height 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    border-radius 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    opacity 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
   opacity: 1;
 }
 
-.area-history .history .card-motion .motion-scroll.onTrans .img-holder .img-wrap > div,
-.area-history .history .card-motion .motion.onTrans .img-holder .img-wrap > div {
+.area-history
+  .history
+  .card-motion
+  .motion-scroll.onTrans
+  .img-holder
+  .img-wrap
+  > div,
+.area-history
+  .history
+  .card-motion
+  .motion.onTrans
+  .img-holder
+  .img-wrap
+  > div {
   -webkit-transform: translateZ(0) scale(1);
-          transform: translateZ(0) scale(1);
-  -webkit-transition: -webkit-transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
+  transform: translateZ(0) scale(1);
+  -webkit-transition: -webkit-transform 1s
+    cubic-bezier(0.675, 0.005, 0.31, 1.005);
   transition: -webkit-transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
   transition: transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
-  transition: transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005), -webkit-transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
+  transition: transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005),
+    -webkit-transform 1s cubic-bezier(0.675, 0.005, 0.31, 1.005);
   opacity: 1;
 }
 
@@ -1081,14 +1107,14 @@ Create date :
 
 .flex-box.jcsb {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .flex-box.aic {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-box label {
@@ -1108,7 +1134,7 @@ Create date :
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style-type: none;
   width: 86px;
   height: 86px;
@@ -1121,7 +1147,7 @@ Create date :
   -webkit-transition: width 0.45s ease;
   transition: width 0.45s ease;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
   background-color: #fff;
 }
 
@@ -1309,7 +1335,7 @@ Create date :
   content: "";
   background-color: #fff;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 [data-tooltip]:hover:before,
@@ -1348,7 +1374,7 @@ Create date :
 }
 
 /* tablet */
-@media (max-width: 1181px) {
+@media (max-width: 1199px) {
   .card {
     padding: 40px 20px;
   }
@@ -1522,11 +1548,11 @@ Create date :
   .breadcrumb-add-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin-bottom: 35px;
   }
   .breadcrumb-add-nav .breadcrumb {
@@ -1554,8 +1580,8 @@ Create date :
   }
   .area-history .history-date {
     -webkit-writing-mode: initial;
-        -ms-writing-mode: initial;
-            writing-mode: initial;
+    -ms-writing-mode: initial;
+    writing-mode: initial;
     font-size: 7.5rem;
     margin-bottom: 10px;
   }
@@ -1580,13 +1606,13 @@ Create date :
   .flex-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .flex-box.aic {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .flex-box .btn.btn-white.btn-xsmall {
     margin-top: 20px;
@@ -1633,7 +1659,7 @@ Create date :
   [data-tooltip]:before {
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     margin-left: 68px;
     width: 80vw;
   }
@@ -1663,8 +1689,8 @@ Create date :
   .join-process.type2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding-bottom: 40px;
   }
   .join-process.type2 > li {
