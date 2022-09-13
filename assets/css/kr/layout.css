@@ -144,7 +144,7 @@ Create date :
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 10vh;
     left: 0;
     width: 100%;
     padding-left: 40px;
@@ -315,6 +315,11 @@ Create date :
   padding-left: 40px;
   font-family: "S-CoreDream";
   text-align: left;
+}
+
+.all-menu > nav .all-menu-list {
+  height: 70vh;
+  overflow: auto;
 }
 
 .all-menu > nav .all-menu-list > li {
