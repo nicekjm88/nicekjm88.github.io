@@ -132,6 +132,7 @@ Create date :
   float: left;
   padding-left: 30px;
   position: relative;
+  color: #707070;
 }
 
 .breadcrumb-item i {
