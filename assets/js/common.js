@@ -153,7 +153,7 @@ $(window).resize(function () {
     $(".all-menu-list>li>a").click(function (e) {
       $(this).attr("href", "javascript:void(0)");
       $(this).next().slideToggle();
-      $(this).parent().siblings().find(".depth1").next().slideUp();
+      // $(this).parent().siblings().find(".depth1").next().slideUp();
     });
   }
 });
