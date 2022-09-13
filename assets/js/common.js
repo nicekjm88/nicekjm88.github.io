@@ -150,13 +150,10 @@ $(function () {
 $(window).resize(function () {
   if ($(window).width() < 1366) {
     $(".all-menu-list>li").eq(0).addClass("is-active");
-    $(".all-menu-list>li>a").click(function () {
+    $(".all-menu-list>li>a").click(function (e) {
       $(this).attr("href", "javascript:void(0)");
-      $(this)
-        .parent()
-        .addClass("is-active")
-        .siblings()
-        .removeClass("is-active");
+      $(this).next().slideToggle();
+      $(this).parent().siblings().find(".depth1").next().slideUp();
     });
   }
 });

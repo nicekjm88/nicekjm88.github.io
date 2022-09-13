@@ -131,6 +131,23 @@ Create date :
         right: 25px;
       }
     }
+
+    .mobile-utils {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        padding-left: 40px;
+      }
+      > a {
+        display: block;
+        margin-right: 20px;
+      }
+    }
   }
 
   &::before {
@@ -206,9 +223,10 @@ Create date :
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
-  // &:last-child {
-  //   width: 12px;
-  // }
+  &:last-child {
+    width: 12px;
+    margin: 6px 0 6px 0;
+  }
 }
 
 .hamburger:hover {
@@ -260,6 +278,7 @@ Create date :
   transform: translateY(8px) rotate(45deg);
 }
 #hamburger-11.is-active .line:nth-child(3) {
+  width: 23px;
   -webkit-transform: translateY(-8px) rotate(-45deg);
   -ms-transform: translateY(-8px) rotate(-45deg);
   -o-transform: translateY(-8px) rotate(-45deg);
@@ -441,7 +460,8 @@ Create date :
     left: 20px;
   }
   .all-menu > nav {
-    padding-top: 150px;
+    padding-top: 100px;
+    padding-left: 20px;
   }
   .all-menu > nav .all-menu-list > li .depth2 > li .depth3 {
     display: none;
@@ -455,11 +475,10 @@ Create date :
   img {
     max-width: 100%;
   }
+  .all-menu > nav .all-menu-list > li {
+    margin-bottom: 20px;
+  }
   .all-menu > nav .all-menu-list > li .depth2 > li {
     margin-bottom: 0;
-  }
-
-  .all-menu > nav .all-menu-list > li {
-    margin-bottom: 30px;
   }
 }
