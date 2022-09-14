@@ -152,11 +152,13 @@ $(window).resize(function () {
     $(".all-menu-list>li").eq(0).addClass("is-active");
     $(".all-menu-list>li>a").click(function () {
       $(this).attr("href", "javascript:void(0)");
-      $(this)
-        .parent()
-        .addClass("is-active")
-        .siblings()
-        .removeClass("is-active");
+      $(this).next().slideToggle();
+      $(this).parent().siblings().find(".depth2").slideUp();
+      // $(this)
+      //   .parent()
+      //   .addClass("is-active")
+      //   .siblings()
+      //   .removeClass("is-active");
     });
 
     $(".hamburger").on("click", function () {
