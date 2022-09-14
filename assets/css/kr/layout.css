@@ -317,11 +317,6 @@ Create date :
   text-align: left;
 }
 
-.all-menu > nav .all-menu-list {
-  height: 60vh;
-  overflow: auto;
-}
-
 .all-menu > nav .all-menu-list > li {
   margin-bottom: 40px;
 }
@@ -413,6 +408,13 @@ Create date :
   .all-menu > nav .all-menu-list > li {
     width: 20%;
     float: left;
+  }
+}
+
+@media (max-width: 1366px) {
+  .all-menu > nav .all-menu-list {
+    height: 60vh;
+    overflow: auto;
   }
 }
 
