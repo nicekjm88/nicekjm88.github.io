@@ -154,7 +154,7 @@ $(window).resize(function () {
       $(this)
         .attr("href", "javascript:void(0)")
         .next()
-        .slideToggle()
+        .slideDown()
         .parent()
         .siblings()
         .find(".depth2")
