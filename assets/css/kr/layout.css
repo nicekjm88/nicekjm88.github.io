@@ -144,7 +144,7 @@ Create date :
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 5vh;
     left: 0;
     width: 100%;
     padding-left: 40px;
@@ -320,6 +320,7 @@ Create date :
 .all-menu > nav .all-menu-list {
   height: 60vh;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .all-menu > nav .all-menu-list > li {
