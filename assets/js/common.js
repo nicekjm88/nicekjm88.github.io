@@ -158,6 +158,14 @@ $(window).resize(function () {
         .siblings()
         .removeClass("is-active");
     });
+
+    $(".hamburger").on("click", function () {
+      if (!$(this).hasClass("is-active")) {
+        $("#wrap").css("height", "100vh");
+      } else {
+        $("#wrap").css("height", "inherit");
+      }
+    });
   }
 });
 

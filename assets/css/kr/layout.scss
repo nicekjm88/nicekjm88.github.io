@@ -302,8 +302,7 @@ Create date :
 
     .all-menu-list {
       height: 60vh;
-      overflow: hidden;
-      border: 1px solid red;
+      overflow: auto;
 
       > li {
         margin-bottom: 40px;
