@@ -151,9 +151,14 @@ $(window).resize(function () {
   if ($(window).width() < 1366) {
     $(".all-menu-list>li").eq(0).addClass("is-active");
     $(".all-menu-list>li>a").click(function () {
-      $(this).attr("href", "javascript:void(0)");
-      $(this).next().slideToggle();
-      $(this).parent().siblings().find(".depth2").slideUp();
+      $(this)
+        .attr("href", "javascript:void(0)")
+        .next()
+        .slideToggle()
+        .parent()
+        .siblings()
+        .find(".depth2")
+        .slideUp();
       // $(this)
       //   .parent()
       //   .addClass("is-active")
