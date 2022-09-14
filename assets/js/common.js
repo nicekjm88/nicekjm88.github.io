@@ -154,11 +154,11 @@ $(window).resize(function () {
       $(this)
         .attr("href", "javascript:void(0)")
         .next()
-        .slideDown()
+        .slideToggle("slow")
         .parent()
         .siblings()
         .find(".depth2")
-        .slideUp();
+        .slideUp("slow");
       // $(this)
       //   .parent()
       //   .addClass("is-active")
