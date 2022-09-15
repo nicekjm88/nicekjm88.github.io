@@ -49,4 +49,18 @@ $(function () {
     // .addIndicators()
     .setTween(tween2)
     .addTo(controller);
+
+  $(".slogan a").click(function (e) {
+    e.preventDefault();
+    var bindId = $(this.hash).selector;
+
+    $(".slogan-item-desc").removeClass("is-active");
+    $(bindId).addClass("is-active");
+  });
+
+  $(".slogan-item").each(function (idx, el) {
+    $(el).on("click", function () {
+      $(this).addClass("is-active").siblings().removeClass("is-active");
+    });
+  });
 });

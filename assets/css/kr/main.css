@@ -129,25 +129,21 @@ Create date :
   letter-spacing: -2px;
 }
 
-#contents .section2 .slogan > span {
+#contents .section2 .slogan-item {
   position: relative;
   left: -30px;
   opacity: 0;
-  display: block;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-#contents .section2 .slogan strong {
-  font-weight: 700;
-  color: #000;
-  position: relative;
-}
-
-#contents .section2 .slogan strong span {
+#contents .section2 .slogan-item a {
   position: relative;
   z-index: 2;
 }
 
-#contents .section2 .slogan strong::before {
+#contents .section2 .slogan-item::before {
   content: "";
   background: url("../../images/bg_circle.gif") 0 0 no-repeat;
   width: 25px;
@@ -155,17 +151,47 @@ Create date :
   position: absolute;
   top: 0;
   right: -40px;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  opacity: 0;
+  margin-top: -20px;
+  margin-right: -20px;
 }
 
-#contents .section2 .slogan strong::after {
+#contents .section2 .slogan-item::after {
   position: absolute;
   bottom: 0;
   left: 0;
   content: "";
-  width: 100%;
+  width: 0;
   height: 24px;
   background-color: #5cc2cf;
   z-index: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#contents .section2 .slogan-item.is-active {
+  font-weight: 700;
+  color: #000;
+}
+
+#contents .section2 .slogan-item.is-active::before {
+  opacity: 1;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+#contents .section2 .slogan-item.is-active::after {
+  width: 100%;
+}
+
+#contents .section2 .slogan-item-desc {
+  display: none;
+}
+
+#contents .section2 .slogan-item-desc.is-active {
+  display: block;
 }
 
 #contents .section2 .picture {
@@ -181,6 +207,7 @@ Create date :
   font-family: "S-CoreDream";
   line-height: 1;
   display: block;
+  letter-spacing: -0.05em;
 }
 
 #contents .section2 .picture-img {
@@ -209,14 +236,6 @@ Create date :
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin-left: 40px;
-  margin-top: 20px;
-}
-
-@media (max-width: 767px) {
-  #contents .section2 .picture {
-    display: none;
-  }
 }
 
 #contents .section2 .desc {
@@ -254,13 +273,13 @@ Create date :
   border: 1px solid #707070;
   padding: 0 30px;
   text-align: left;
-  background: url("../../images/bg_btn_arr.gif") 90% center no-repeat #f5f5f5;
+  background: url("../../images/bg_btn_arr.gif") 85% center no-repeat #f5f5f5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 767px) {
-  #contents .section2 .desc {
-    background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
-  }
+#contents .section2 .desc-btn:hover {
+  background-position: 90% center;
 }
 
 #contents .section2.fade-in .slogan > span {
@@ -408,10 +427,6 @@ Create date :
   #contents .section2 .slogan {
     font-size: 6rem;
   }
-  #contents .section2 .picture {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
-  }
   #contents .section3 .slogan {
     font-size: 6rem;
   }
@@ -452,6 +467,9 @@ Create date :
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  #contents .section2 .slogan-item-desc {
+    padding: 0 40px;
+  }
   #contents .section2 .slogan {
     font-size: 4rem;
     text-align: center;
@@ -459,20 +477,41 @@ Create date :
   #contents .section2.fade-in .slogan > span {
     left: 0;
   }
-  #contents .section2 .desc {
-    background-size: 90%;
-    background-position: center 20px;
-  }
   #contents .section2 .desc-title {
     font-size: 2.5rem;
   }
   #contents .section2 .desc {
     font-size: 2rem;
-    padding: 280px 20px 0;
+    word-break: keep-all;
+  }
+  #contents .section2 .desc br {
+    display: none;
+  }
+  #contents .section2 .picture {
+    margin-bottom: 0;
+  }
+  #contents .section2 .picture-title {
+    font-size: 7rem;
+    margin-top: 75px;
+    margin-bottom: 25px;
+  }
+  #contents .section2 .picture-img {
+    margin-top: 0;
+    left: inherit;
+    right: -80px;
+    top: -100px;
+    -webkit-transform: translateX(0) scale(0.5);
+            transform: translateX(0) scale(0.5);
+  }
+  #contents .section2 .picture-img .img img {
+    max-width: inherit;
   }
   #contents .section2 .desc-btn {
     width: 215px;
     height: 55px;
+  }
+  #contents .section2 .desc-btn + .desc-btn {
+    margin-top: 20px;
   }
   #contents .section3 {
     padding-top: 100px;
