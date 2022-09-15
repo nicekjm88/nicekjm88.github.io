@@ -3,9 +3,17 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import url(e:\Study\nicekjm88.github.io\assets\css\grid.min.css);
+@import url(c:\Users\5000w\Documents\workspace\sidejob\nicekjm88.github.io\assets\css\grid.min.css);
 #wrap {
   overflow: hidden;
+}
+
+#wrap #header {
+  top: -116px;
+}
+
+#wrap.intro #header {
+  top: 0;
 }
 
 #header {
@@ -317,6 +325,10 @@ Create date :
   text-align: left;
 }
 
+.all-menu > nav .all-menu-list {
+  text-align: center;
+}
+
 .all-menu > nav .all-menu-list > li {
   margin-bottom: 40px;
 }
@@ -333,7 +345,9 @@ Create date :
   background-color: #e0e0e0;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
 }
 
@@ -415,6 +429,7 @@ Create date :
   .all-menu > nav .all-menu-list {
     height: 60vh;
     overflow: auto;
+    text-align: left;
   }
 }
 

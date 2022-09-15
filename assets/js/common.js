@@ -1,30 +1,8 @@
-$(function () {
-  setTimeout(function () {
-    $("#wrap").addClass("intro");
-  }, 0);
-
-  //햄버거매뉴(모바일)
-  $(".menu-btn").click(function () {
-    $(this).toggleClass("active");
-    $(this).next().toggleClass("active");
-    if ($(window).width() < 767) {
-      $("body").toggleClass("fixed");
-    }
-  });
-
-  //아코디언
-  $(".accordion > li .open").on("click", function () {
-    $(this).parents("li").toggleClass("is-active");
-    $(this).parent().next().slideToggle();
-  });
-
-  //문의
-  $(".quick ul").on("mouseenter", function () {
-    $(this).addClass("is-active");
-  });
-  $(".quick ul").on("mouseleave", function () {
-    $(this).removeClass("is-active");
-  });
+//aos init
+AOS.init({
+  duration: 1000,
+  easing: "ease",
+  offset: 0,
 });
 
 //tabs
@@ -146,6 +124,35 @@ $(function () {
 
   $(".tab-button:first-of-type", tabContainer).trigger("click");
 })(document, jQuery);
+
+$(function () {
+  setTimeout(function () {
+    $("#wrap").addClass("intro");
+  }, 0);
+
+  //햄버거매뉴(모바일)
+  $(".menu-btn").click(function () {
+    $(this).toggleClass("active");
+    $(this).next().toggleClass("active");
+    if ($(window).width() < 767) {
+      $("body").toggleClass("fixed");
+    }
+  });
+
+  //아코디언
+  $(".accordion > li .open").on("click", function () {
+    $(this).parents("li").toggleClass("is-active");
+    $(this).parent().next().slideToggle();
+  });
+
+  //문의
+  $(".quick ul").on("mouseenter", function () {
+    $(this).addClass("is-active");
+  });
+  $(".quick ul").on("mouseleave", function () {
+    $(this).removeClass("is-active");
+  });
+});
 
 $(window).resize(function () {
   if ($(window).width() < 1366) {

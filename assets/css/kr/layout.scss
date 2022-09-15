@@ -11,6 +11,16 @@ Create date :
 
 #wrap {
   overflow: hidden;
+
+  #header {
+    top: -116px;
+  }
+
+  &.intro {
+    #header {
+      top: 0;
+    }
+  }
 }
 
 #header {
@@ -301,6 +311,8 @@ Create date :
     text-align: left;
 
     .all-menu-list {
+      text-align: center;
+
       > li {
         margin-bottom: 40px;
 
@@ -315,7 +327,8 @@ Create date :
             background-color: #e0e0e0;
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             display: none;
 
             @media (min-width: 1281px) {
@@ -388,6 +401,7 @@ Create date :
       @media (max-width: 1366px) {
         height: 60vh;
         overflow: auto;
+        text-align: left;
       }
     }
 
