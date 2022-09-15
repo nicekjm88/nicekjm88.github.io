@@ -463,6 +463,7 @@ textarea.form-control {
 }
 .btn:hover,
 .btn:focus {
+  background-color: #f1f1f1;
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
 }
@@ -524,17 +525,26 @@ textarea.form-control {
   margin-left: 10px;
 }
 
-.btn.btn-primary {
-  background-color: #006064;
-  color: #fff;
-  border-color: #006064;
-}
-
 .btn.btn-white {
   background-color: #ddd;
   color: #555;
   border-color: #ddd;
   background-color: #fff;
+}
+
+.btn.btn-primary {
+  background-color: #006064;
+  color: #fff;
+  border-color: #006064;
+}
+.btn.btn-primary:hover {
+  background-color: #004c4f;
+  border-color: #004c4f;
+}
+
+.btn.btn-input:hover,
+.btn.btn-white:hover {
+  background-color: #fafafa;
 }
 
 .btn-with-label {
