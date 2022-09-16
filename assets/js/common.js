@@ -130,12 +130,15 @@ $(function () {
     $("#wrap").addClass("intro");
   }, 0);
 
-  //햄버거매뉴(모바일)
-  $(".menu-btn").click(function () {
-    $(this).toggleClass("active");
-    $(this).next().toggleClass("active");
-    if ($(window).width() < 767) {
-      $("body").toggleClass("fixed");
+  //모바일용 매뉴
+  $(".snb-mobile").find(".dropdown").hide();
+  $(".snb-mobile a").click(function (e) {
+    if (!$(this).siblings(".dropdown").is(":hidden")) {
+      $(this).siblings(".dropdown").stop(true, false).slideUp(500);
+      $(this).removeClass("is-open");
+    } else {
+      $(this).siblings(".dropdown").stop(true, false).slideDown(500);
+      $(this).addClass("is-open");
     }
   });
 
@@ -161,9 +164,11 @@ $(window).resize(function () {
       $(this)
         .attr("href", "javascript:void(0)")
         .next()
-        .slideDown()
+        .stop(true, false)
+        .slideToggle()
         .parent()
         .siblings()
+        .stop(true, false)
         .find(".depth2")
         .slideUp();
       // $(this)
