@@ -470,12 +470,20 @@ Create date :
   #contents .section2 .slogan-item-desc {
     padding: 0 40px;
   }
+  #contents .section2 .slogan-item::before {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #contents .section2 .slogan-item::after {
+    height: 16px;
+  }
   #contents .section2 .slogan {
     font-size: 4rem;
     text-align: center;
   }
   #contents .section2.fade-in .slogan > span {
     left: 0;
+    margin-bottom: 10px;
   }
   #contents .section2 .desc-title {
     font-size: 2.5rem;

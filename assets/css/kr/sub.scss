@@ -1467,6 +1467,25 @@ Create date :
 
 /* mobile */
 @media (max-width: 768px) {
+  #wrap.intro .area-reset::before,
+  #wrap.intro .area-join::before {
+    transform: scale(0.5);
+    top: 30px;
+    right: -10vw;
+  }
+
+  .breadcrumb {
+    font-size: 1.2rem;
+
+    i {
+      font-size: 1.6rem;
+    }
+
+    &-item::before {
+      top: 7px;
+    }
+  }
+
   .area-mypage,
   .area-join,
   .area-reset {
@@ -1479,7 +1498,7 @@ Create date :
     font-size: 3.2rem;
   }
   .contents-title + p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     word-break: keep-all;
   }
   .card {
@@ -1537,7 +1556,7 @@ Create date :
       letter-spacing: -0.05em;
 
       strong {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     }
 
@@ -1554,10 +1573,11 @@ Create date :
     right: 10px;
   }
   .accordion > li .card-inner {
-    padding: 25px 35px;
+    padding: 15px;
+    font-size: 1.3rem;
   }
   .accordion > li .card label {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     letter-spacing: -0.07em;
   }
   .btn.btn-xxl {
@@ -1602,6 +1622,8 @@ Create date :
     font-size: 1.4rem;
   }
   input[type="checkbox"] + label:before {
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
   }
   .btn-group.btn-group-final {
@@ -1795,5 +1817,8 @@ Create date :
   }
   .send-agree-desc {
     font-size: 1.6rem;
+  }
+  .all-check input[type="checkbox"] + label {
+    font-size: 1.3rem;
   }
 }
