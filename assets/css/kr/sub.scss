@@ -3,6 +3,9 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
+
+$mobileFontSize: 1.6rem;
+
 #footer {
   padding-top: 160px;
   clear: both;
@@ -260,6 +263,10 @@ Create date :
     margin-bottom: 0;
     margin-top: 10px;
   }
+}
+
+.withdrawal-title {
+  font-size: 3rem;
 }
 
 /* custom select */
@@ -1358,6 +1365,7 @@ Create date :
   text-align: center;
   font-size: 1.6rem;
   letter-spacing: -0.05em;
+  text-align: left;
 }
 
 [data-tooltip]:after {
@@ -1495,19 +1503,18 @@ Create date :
     // background: none;
   }
   .contents-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .contents-title + p {
-    font-size: 1.3rem;
+    font-size: $mobileFontSize;
     word-break: keep-all;
   }
   .card {
-    padding: 40px 20px;
-    font-size: 1.3rem;
+    padding: 20px 20px;
+    font-size: $mobileFontSize;
   }
   .card-title {
     font-size: 1.6rem;
-    margin-top: 15px;
   }
   .accordion {
     margin-top: 15px;
@@ -1516,7 +1523,7 @@ Create date :
     margin-top: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-size: 1.3rem;
+    font-size: $mobileFontSize;
   }
   #footer .rule-list {
     padding-left: 0;
@@ -1537,7 +1544,7 @@ Create date :
     padding: 0 10px;
   }
   .area-login-form .area-login-links > li > a {
-    font-size: 1.3rem;
+    font-size: $mobileFontSize;
   }
   .contents-title + p + .card {
     margin-top: 40px;
@@ -1583,10 +1590,10 @@ Create date :
   }
   .accordion > li .card-inner {
     padding: 15px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .accordion > li .card label {
-    font-size: 1.3rem;
+    font-size: $mobileFontSize;
     letter-spacing: -0.07em;
   }
   .btn.btn-xxl {
@@ -1598,15 +1605,16 @@ Create date :
     line-height: 1.4;
   }
   .contents-title2 {
-    margin-top: 0;
+    margin-top: 37px;
+    font-size: 2rem;
+  }
+  .card-top .contents-title2 {
+    margin-top: 5px;
   }
   .contents-title2-desc {
-    font-size: 1.4rem;
-    padding-top: 20px;
+    font-size: 1.1rem;
+    padding-top: 10px;
     padding-left: 5px;
-  }
-  .btn.btn-sm {
-    width: 80px;
   }
   .modal-title {
     padding-bottom: 20px;
@@ -1625,16 +1633,16 @@ Create date :
   }
   .card .form-check-group .form-check-inline {
     display: block;
-    width: 33%;
+    width: 50%;
     float: left;
     margin-left: 0;
     font-size: 1.4rem;
+
+    &:last-child {
+      margin-top: 20px;
+    }
   }
-  input[type="checkbox"] + label:before {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
+
   .btn-group.btn-group-final {
     width: 100%;
   }
@@ -1677,7 +1685,7 @@ Create date :
 
   .area-history {
     .main-ment {
-      font-size: 3rem;
+      font-size: 2.6rem;
       margin-bottom: 60px;
     }
 
@@ -1696,7 +1704,7 @@ Create date :
       }
       &-date {
         writing-mode: initial;
-        font-size: 7.5rem;
+        font-size: 5rem;
         margin-bottom: 10px;
       }
       &-item {
@@ -1710,13 +1718,17 @@ Create date :
       .card-motion {
         margin-bottom: 25px;
       }
+
+      .pitcture-desc {
+        font-size: $mobileFontSize;
+      }
     }
   }
   .area-submission {
     padding-top: 35px;
   }
   .area-submission .card.type2 {
-    padding: 40px 20px;
+    padding: 20px;
   }
   .modal.type2 .modal-dialog {
     width: calc(100% - 20px);
@@ -1737,7 +1749,10 @@ Create date :
   }
 
   .tab-container .tab-list > .tab-button {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .tab-container .tab-list > .tab-button + .tab-button {
+    margin-left: 10px;
   }
   .tab-container .tabs-desc {
     font-size: 1.6rem;
@@ -1776,7 +1791,9 @@ Create date :
     left: 50%;
     transform: translateX(-50%);
     margin-left: 68px;
-    width: 80vw;
+    width: 50vw;
+    font-size: 1.3rem;
+    text-align: left;
   }
   .list > li {
     font-size: 1.6rem;
@@ -1817,6 +1834,9 @@ Create date :
     text-align: center;
     letter-spacing: -0.05em;
   }
+  .join-process.type2 > li strong {
+    font-size: 1.2rem;
+  }
   .join-process.type2 > li::before,
   .join-process.type2 > li::after {
     display: none;
@@ -1828,7 +1848,7 @@ Create date :
     font-size: 1.6rem;
   }
   .all-check input[type="checkbox"] + label {
-    font-size: 1.3rem;
+    font-size: $mobileFontSize;
   }
   .area-login-form .form-login {
     margin-top: 30px;
@@ -1842,9 +1862,31 @@ Create date :
     background-size: 36.5px 36.5px;
   }
   .icon-desc {
-    font-size: 1.3rem;
+    font-size: $mobileFontSize;
   }
   .email-auth-title {
     font-size: 1.6rem;
+  }
+  .card-top {
+    padding-top: 37px;
+  }
+  .area-mypage .card .btn-white {
+    margin-top: 20px;
+    height: 50px;
+    font-size: 1.6rem;
+    padding: 8px 12px;
+  }
+  .box ul.order-list,
+  .box ol.order-list {
+    font-size: 1.4rem;
+  }
+  .send-agree-title {
+    font-size: $mobileFontSize;
+  }
+  .send-agree-desc {
+    font-size: $mobileFontSize;
+  }
+  .area-history {
+    padding-top: 35px;
   }
 }
