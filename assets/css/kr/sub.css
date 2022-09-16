@@ -1453,10 +1453,10 @@ Create date :
 @media (max-width: 768px) {
   #wrap.intro .area-reset::before,
   #wrap.intro .area-join::before {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    top: 30px;
-    right: -10vw;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    top: 0;
+    right: -20vw;
   }
   .breadcrumb {
     font-size: 1.2rem;
@@ -1483,11 +1483,20 @@ Create date :
   }
   .card {
     padding: 40px 20px;
+    font-size: 1.3rem;
+  }
+  .card-title {
+    font-size: 1.6rem;
+    margin-top: 15px;
+  }
+  .accordion {
+    margin-top: 15px;
   }
   #footer {
     margin-top: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 1.3rem;
   }
   #footer .rule-list {
     padding-left: 0;
@@ -1509,7 +1518,7 @@ Create date :
     padding: 0 10px;
   }
   .area-login-form .area-login-links > li > a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .contents-title + p + .card {
     margin-top: 40px;
@@ -1786,6 +1795,23 @@ Create date :
   }
   .all-check input[type="checkbox"] + label {
     font-size: 1.3rem;
+  }
+  .area-login-form .form-login {
+    margin-top: 30px;
+  }
+  .area-login-form .form-login .form-control {
+    margin-bottom: 10px;
+  }
+  .icon-desc-title {
+    font-size: 2rem;
+    padding-top: 50px;
+    background-size: 36.5px 36.5px;
+  }
+  .icon-desc {
+    font-size: 1.3rem;
+  }
+  .email-auth-title {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=sub.css.map */

@@ -937,4 +937,23 @@ button.close {
     padding: 30px;
     font-size: 1.6rem;
   }
+  input[type="checkbox"]:checked + label:before {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+  .btn-submit {
+    padding-top: 15px;
+  }
+  .btn,
+  .btn.btn-input {
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .form-control {
+    height: 50px;
+    font-size: 1.6rem;
+  }
+  .form-check-inline {
+    font-size: 1.3rem;
+  }
 }
