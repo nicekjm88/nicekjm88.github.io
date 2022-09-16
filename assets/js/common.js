@@ -164,11 +164,9 @@ $(window).resize(function () {
       $(this)
         .attr("href", "javascript:void(0)")
         .next()
-        .stop(true, false)
-        .slideToggle()
+        .slideDown()
         .parent()
         .siblings()
-        .stop(true, false)
         .find(".depth2")
         .slideUp();
       // $(this)
